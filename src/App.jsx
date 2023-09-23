@@ -25,6 +25,8 @@ import CalendarForTheDay from "./components/Judge/CalendarForTheDay";
 import CourtCaseReports from "./components/Judge/CourtCaseReports";
 import DocVerification from "./components/SuperAdmin/DocVerification";
 import Navbar from "./components/Navbar";
+import DocumentUpload from "./components/User/DocumentUpload";
+
 
 import "./index.css";
 import LawyerByCaseDomain from "./components/User/LawyerByCaseDomain";
@@ -85,6 +87,10 @@ export default function App() {
           element={
             <LawyerByCaseDomain isUserAuthenticated={isUserAuthenticated} />
           }
+        />
+        <Route
+          path="/document-upload"
+          element={<DocumentUpload isUserAuthenticated={isUserAuthenticated} />}
         />
         <Route
           path="/search-lawyer-by-name"

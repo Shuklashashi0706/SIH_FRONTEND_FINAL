@@ -39,6 +39,14 @@ function HomeUser({ isUserAuthenticated }) {
               View Request Status
             </button>
           </Link>
+          <button className="px-4 py-2 bg-custom-purple font-semibold text-custom-text rounded-lg hover:bg-purple-100 ml-3">
+              <a href="http://localhost:8501">Get Doc Unique Id</a>
+            </button>
+          <Link to="/document-upload">
+            <button className="px-4 py-2 bg-custom-purple font-semibold text-custom-text rounded-lg hover:bg-purple-100 ml-3">
+              Upload Document
+            </button>
+          </Link>
         </div>
       </div>
     </div>
